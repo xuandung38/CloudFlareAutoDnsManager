@@ -13,6 +13,9 @@
       <executable />
     </execution>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
@@ -113,6 +116,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1SShOdrgd9vxTXP7cIdsSq0XP0r" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -150,7 +154,7 @@
       <workItem from="1571562906324" duration="38000" />
       <workItem from="1571563039698" duration="59000" />
       <workItem from="1571565448224" duration="152000" />
-      <workItem from="1571566443408" duration="2695000" />
+      <workItem from="1571566443408" duration="3025000" />
     </task>
     <servers />
   </component>
