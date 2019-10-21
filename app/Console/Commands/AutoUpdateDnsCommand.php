@@ -94,10 +94,10 @@ class AutoUpdateDnsCommand extends Command
                 $msg = 'Đã thay đổi dns của ' .$record->record . ' từ ip '.$record->new_ip. ' qua '. $ip;
                 Log::info($msg);
 
-                $this->info($msg);
+                $this->line($msg);
             }else{
                 $msg = 'Có lỗi xảy ra trong quá trình đổi ip';
-                $this->error( $msg );
+                $this->line( $msg );
                 Log::info($msg);
             }
         }
