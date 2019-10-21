@@ -81,6 +81,7 @@ class AutoUpdateDnsCommand extends Command
             $json = json_decode($setdns);
             if ($json->success == true)
             {
+                Log::info('Đã thay đổi dns của ' .$record->record . ' từ ip '.$record->new_ip. ' qua '. $ip);
 
                 $record->update([
                     'new_ip' => $ip,
@@ -91,14 +92,8 @@ class AutoUpdateDnsCommand extends Command
                     'new_ip' => $ip,
                     'old_ip' => $record->new_ip
                 ]);
-                $msg = 'Đã thay đổi dns của ' .$record->record . ' từ ip '.$record->new_ip. ' qua '. $ip;
-                Log::info($msg);
-
-                $this->line($msg);
             }else{
-                $msg = 'Có lỗi xảy ra trong quá trình đổi ip';
-                $this->line( $msg );
-                Log::info($msg);
+                Log::info('Có lỗi xảy ra trong quá trình đổi ip');
             }
         }
     }
