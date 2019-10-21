@@ -44,6 +44,7 @@ class AutoUpdateDnsCommand extends Command
         $records = RecordList::with('domain')->get();
         foreach ($records as $record){
             $this->updateDns($record->id);
+            $this->info($record->record .' Update successfully!');
         }
     }
 
