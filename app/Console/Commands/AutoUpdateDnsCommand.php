@@ -22,7 +22,7 @@ class AutoUpdateDnsCommand extends Command
      *
      * @var string
      */
-    protected $description = 'Command description';
+    protected $description = 'Auto update all dns';
 
     /**
      * Create a new command instance.
@@ -81,7 +81,6 @@ class AutoUpdateDnsCommand extends Command
             $json = json_decode($setdns);
             if ($json->success == true)
             {
-                Log::info('Đã thay đổi dns của ' .$record->record . ' từ ip '.$record->new_ip. ' qua '. $ip);
 
                 $record->update([
                     'new_ip' => $ip,
@@ -92,8 +91,14 @@ class AutoUpdateDnsCommand extends Command
                     'new_ip' => $ip,
                     'old_ip' => $record->new_ip
                 ]);
+                $msg = 'Đã thay đổi dns của ' .$record->record . ' từ ip '.$record->new_ip. ' qua '. $ip;
+                Log::info($msg);
+
+                $this->info($msg);
             }else{
-                Log::info('Có lỗi xảy ra trong quá trình đổi ip');
+                $msg = 'Có lỗi xảy ra trong quá trình đổi ip';
+                $this->error( $msg );
+                Log::info($msg);
             }
         }
     }

@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89d6bf23-ca89-4e1f-83f5-95ba4aa0a213" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Console/Commands/AutoUpdateDnsCommand.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Console/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Commands/AutoUpdateDnsCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/AutoUpdateDnsCommand.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -194,7 +193,7 @@
       <workItem from="1571563039698" duration="59000" />
       <workItem from="1571565448224" duration="152000" />
       <workItem from="1571566443408" duration="3025000" />
-      <workItem from="1571590794860" duration="20476000" />
+      <workItem from="1571590794860" duration="20732000" />
     </task>
     <servers />
   </component>
